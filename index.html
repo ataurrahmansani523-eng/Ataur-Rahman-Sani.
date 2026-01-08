@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ataur Rahman Sani | Software Developer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Inter', sans-serif;
+    }
+
+    body{
+      background:#0b0f19;
+      color:#e5e7eb;
+      line-height:1.6;
+    }
+
+    a{color:inherit;text-decoration:none}
+
+    /* NAVBAR */
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      background:rgba(11,15,25,0.8);
+      backdrop-filter:blur(10px);
+      padding:15px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      z-index:100;
+    }
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:25px;
+    }
+
+    nav a:hover{color:#38bdf8}
+
+    /* HERO */
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      padding:120px 50px 50px;
+    }
+
+    .hero h4{color:#38bdf8;margin-bottom:10px}
+    .hero h1{font-size:3rem;margin-bottom:10px}
+    .hero h2{font-size:1.4rem;font-weight:500;color:#9ca3af}
+    .hero p{margin:20px 0;max-width:500px}
+
+    .btns a{
+      display:inline-block;
+      padding:12px 24px;
+      border-radius:30px;
+      margin-right:15px;
+      margin-top:10px;
+    }
+
+    .btn-primary{
+      background:#38bdf8;
+      color:#020617;
+      font-weight:600;
+    }
+
+    .btn-outline{
+      border:1px solid #38bdf8;
+      color:#38bdf8;
+    }
+
+    /* SECTIONS */
+    section{
+      padding:80px 50px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .section-title{
+      font-size:2rem;
+      margin-bottom:10px;
+    }
+
+    .section-subtitle{
+      color:#9ca3af;
+      margin-bottom:30px;
+    }
+
+    /* SKILLS */
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:#111827;
+      padding:25px;
+      border-radius:15px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 10px 30px rgba(56,189,248,0.15);
+    }
+
+    /* CONTACT */
+    .contact p{
+      margin-bottom:10px;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#9ca3af;
+      border-top:1px solid #1f2937;
+    }
+
+    @media(max-width:600px){
+      nav{padding:15px 20px}
+      .hero h1{font-size:2.2rem}
+      section{padding:70px 20px}
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <strong>ARS</strong>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div id="home" class="hero">
+    <div>
+      <h4>Hello, I'm</h4>
+      <h1>Ataur Rahman Sani</h1>
+      <h2>Software Developer & Science Student</h2>
+      <p>
+        Building clean, responsive, and user-friendly web applications using modern technologies.
+      </p>
+      <div class="btns">
+        <a href="#skills" class="btn-primary">View Skills</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">Student developer focused on learning and growth</p>
+
+    <p>
+      I am a science student and aspiring software developer with a strong interest in web development.
+      I enjoy creating clean, responsive, and functional websites.
+    </p>
+    <br>
+    <p>
+      I mainly work with HTML, CSS, and JavaScript, and I continuously improve my skills by practicing,
+      learning new concepts, and building real projects. My goal is to grow as a professional software developer.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <p class="section-subtitle">Core technologies I use</p>
+
+    <div class="skills">
+      <div class="card">HTML5</div>
+      <div class="card">CSS3</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Responsive Design</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-subtitle">Let’s connect</p>
+
+    <p><strong>Name:</strong> Ataur Rahman Sani</p>
+    <p><strong>Role:</strong> Software Developer & Student</p>
+    <p><strong>Email:</strong> ataurrahman523@gmail.com</p>
+  </section>
+
+  <footer>
+    © 2026 Ataur Rahman Sani • All Rights Reserved
+  </footer>
+
+</body>
+</html>
